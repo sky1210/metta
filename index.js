@@ -624,7 +624,7 @@ client.on('message', msg => {
     };
 //--------------------등록-----------------------
     let sql;
-    if (rows.length < 1) {
+    if (rows == undefined) {
       sql = `INSERT INTO user (id, gold, crops1, crops2, crops3, crops4, crops5, seed1, seed2, seed3, seed4, seed5, plant, watercount, plantcount, energy) VALUES ('${msg.author.id}', 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1000)`
       connection.query(sql,console.log);
     } else {
