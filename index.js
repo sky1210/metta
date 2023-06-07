@@ -634,4 +634,4 @@ client.on('message', msg => {
   try {} catch (err) { console.error(err) }
 });
 
-client.login('ODExNjIzNDEwNzA1NjI5MjU1.YC05NA.VhhK57cyA5FJI1wpuXx7kz1fSxA');
+client.login("Token");
